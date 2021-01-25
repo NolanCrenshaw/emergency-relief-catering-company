@@ -1,4 +1,52 @@
-landing-container {
+.landing-container {
   height: 100vh;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  #landing_background {
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    z-index: 1;
+  }
+  #logo {
+    height: auto;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    // transform: translateX(-50%);
+    z-index: 2;
+  }
+  #mountains_back {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+  #mountains_front {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+  }
+  #grass_left {
+    height: auto;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+  #grass_right {
+    height: auto;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
 }

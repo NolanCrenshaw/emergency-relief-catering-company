@@ -44,6 +44,8 @@ a {
   box-shadow: 0 0 15rem rgba(0, 0, 0, 0.5);
 }
 .app-container {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -53,3 +55,5 @@ a {
 @import "../../node_modules/include-media/dist/include-media.scss";
 
 // Module Imports
+@import "main";
+@import "landing";

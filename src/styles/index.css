@@ -49,6 +49,8 @@ a {
 }
 
 .app-container {
+  min-height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,5 +60,81 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-container #landing_background {
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  z-index: 1;
+}
+
+.landing-container #logo {
+  height: auto;
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 2;
+}
+
+.landing-container #mountains_back {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+.landing-container #mountains_front {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+
+.landing-container #grass_left {
+  height: auto;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.landing-container #grass_right {
+  height: auto;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
 }
 /*# sourceMappingURL=index.css.map */
