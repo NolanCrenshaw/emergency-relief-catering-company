@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const Landing = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, scale: 1.1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1.5 }}
       className="landing-container"
     >
       <img
@@ -15,9 +15,9 @@ const Landing = () => {
         src="./imgs/christopher-burn.png"
       />
       <motion.img
-        initial={{ opacity: 0, y: 200, x: -70 }}
+        initial={{ opacity: 0, y: 100, x: -70 }}
         animate={{ opacity: 1, y: 0, x: -70 }}
-        transition={{ ease: "easeInOut", duration: 2 }}
+        transition={{ ease: "easeInOut", duration: 1.5, delay: 0.5 }}
         id="logo"
         alt="logo"
         src="./imgs/ERCC_logo.png"
@@ -25,7 +25,7 @@ const Landing = () => {
       <motion.img
         initial={{ opacity: 0, y: 150 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 1.5 }}
         id="mountains_back"
         alt="back mountains"
         src="./imgs/fore_mountains_large.png"

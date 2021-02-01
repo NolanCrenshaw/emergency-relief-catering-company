@@ -1,0 +1,43 @@
+.about-container {
+  p {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h4 {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  section {
+    // background-color: rosybrown;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      padding: 5rem;
+      height: auto;
+      width: 60%;
+    }
+    div {
+      width: 40%;
+      padding: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding: 0;
+      }
+    }
+  }
+
+  section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+  }
+}
