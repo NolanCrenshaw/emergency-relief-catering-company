@@ -13,7 +13,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  // font-family: ***;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,17 +43,18 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15rem rgba(0, 0, 0, 0.5);
 }
-.app-container {
-  min-height: 100vh;
-  width: 100%;
+.body_component {
+  padding: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 // Package Imports
 @import "../../node_modules/include-media/dist/include-media.scss";
 
 // Module Imports
+@import "app";
 @import "main";
 @import "landing";

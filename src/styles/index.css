@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,18 +49,166 @@ a {
           box-shadow: 0 0 15rem rgba(0, 0, 0, 0.5);
 }
 
+.body_component {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .app-container {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container nav {
+  height: 10vh;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container nav .nav-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container nav .nav-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container nav .nav-container section:nth-child(1) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app-container nav .nav-container section:nth-child(2) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app-container nav .nav-container section:nth-child(3) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app-container nav .nav-container section:nth-child(3) a {
+  height: 40px;
+  width: 160px;
+  margin: 0 6rem;
+  border-radius: 6px;
+  background-color: #6a040f;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container nav .nav-container section:nth-child(3) a button {
+  border: none;
+  border-radius: 6px;
+  background-color: none;
+  background: none;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.app-container nav .nav-container section:nth-child(3) a button label {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  background-color: none;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.app-container nav .nav-container section:nth-child(3) a:hover {
+  height: 45px;
+  width: 170px;
+  margin: 0 5.5rem;
+  border: 0.5px solid black;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px 2px 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px 2px 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.app-container nav .nav-container section:nth-child(3) a:hover button label {
+  color: #6a040f;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.app-container nav .nav-container span {
+  margin: 0 6rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.app-container #vis {
+  height: auto;
+  width: 100%;
+  max-width: 1920px;
+  overflow-y: scroll;
 }
 
 .main-container {
@@ -73,16 +222,170 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav {
+  height: 10vh;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .nav-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .nav-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .nav-container section:nth-child(1) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-container nav .nav-container section:nth-child(2) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container nav .nav-container section:nth-child(3) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-container nav .nav-container span {
+  margin: 0 5rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.main-container nav {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  background-color: #6a040f;
+  -webkit-box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .nav-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .nav-container a {
+  height: auto;
+  width: auto;
+  border-radius: 6px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-container nav .nav-container a button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1), -2px 2px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1), -2px 2px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.main-container nav .nav-container a button label {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-container nav .nav-container a button:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main-container .bulk_body {
+  height: auto;
+  min-height: 60vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(50%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.main-container .contact-container {
+  height: 60vh;
+  width: 100%;
+  -webkit-box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.main-container footer {
+  height: 20vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.95) 100%);
 }
 
 .landing-container {
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -99,7 +402,7 @@ a {
   height: auto;
   width: 60%;
   position: absolute;
-  top: 25%;
+  top: 10%;
   left: 25%;
   z-index: 2;
 }
@@ -108,7 +411,7 @@ a {
   height: auto;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -15%;
   z-index: 3;
 }
 
@@ -116,11 +419,12 @@ a {
   height: auto;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   z-index: 4;
 }
 
 .landing-container #grass_left {
+  display: none;
   height: auto;
   width: 40%;
   position: absolute;
@@ -130,6 +434,7 @@ a {
 }
 
 .landing-container #grass_right {
+  display: none;
   height: auto;
   width: 40%;
   position: absolute;
