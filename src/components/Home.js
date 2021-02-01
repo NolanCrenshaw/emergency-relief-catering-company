@@ -9,6 +9,10 @@ const Home = () => {
       transition={{ duration: 0.1 }}
       className="home-container body_component"
     >
+      <img
+        alt="logo"
+        src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/ercc_page/ERCC+logo.jpg"
+      />
       <p>
         ERCC provides a ONE CALL solution to box meals and shelf stable meal
         kits nationwide. We handle the order communication, logistics, tracking

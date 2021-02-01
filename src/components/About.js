@@ -9,28 +9,40 @@ const About = () => {
       transition={{ duration: 0.1 }}
       className="about-container body_component"
     >
-      <p>
+      <h4>
         ERCC has been providing hearty and flavorful meals on a large scale
         since 2012.
-      </p>
+      </h4>
       <section>
-        <h2>Volume Capabilities by FEMA Region</h2>
-        <p>
-          ERCC's daily meal capabilities vary per FEMA Region. This map
-          indicates ERCC's daily meal capabilities by region.
-        </p>
+        <img
+          alt="map"
+          src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/ercc_page/FemaMap_edited.jpg"
+        />
+        <div>
+          <h2>Volume Capabilities by FEMA Region</h2>
+          <p>
+            ERCC's daily meal capabilities vary per FEMA Region. This map
+            indicates ERCC's daily meal capabilities by region.
+          </p>
+        </div>
       </section>
       <section>
-        <h2>Lead Times</h2>
-        <p>
-          ERCC's lead times vary for fresh and shelf stabnle meals. Fresh Box
-          Meals have a lead time of 6-48 hours depending on volume and delivery
-          distance.
-        </p>
-        <p>
-          Shelf Stable Meal Kits & Pantry Kits have a lead time of 2-4 days
-          depending on volume and delivery distance.
-        </p>
+        <div>
+          <h2>Lead Times</h2>
+          <p>
+            ERCC's lead times vary for fresh and shelf stabnle meals. Fresh Box
+            Meals have a lead time of 6-48 hours depending on volume and
+            delivery distance.
+          </p>
+          <p>
+            Shelf Stable Meal Kits & Pantry Kits have a lead time of 2-4 days
+            depending on volume and delivery distance.
+          </p>
+        </div>
+        <img
+          alt="van"
+          src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/ercc_page/white_van.jpg"
+        />
       </section>
       <section>
         <h2>Past Performance</h2>

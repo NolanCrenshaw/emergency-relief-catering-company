@@ -86,7 +86,7 @@ a {
 }
 
 .app-container nav {
-  height: 10vh;
+  min-height: 80px;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -233,70 +233,6 @@ a {
 .main-container nav {
   height: 10vh;
   width: 100%;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-container nav .nav-container {
-  height: 100%;
-  width: 100%;
-  max-width: 1420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-container nav .nav-container section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-container nav .nav-container section:nth-child(1) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.main-container nav .nav-container section:nth-child(2) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-container nav .nav-container section:nth-child(3) {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.main-container nav .nav-container span {
-  margin: 0 5rem;
-  font-size: 3rem;
-  font-weight: 900;
-}
-
-.main-container nav {
-  height: 10vh;
-  width: 100%;
   position: relative;
   background-color: #6a040f;
   -webkit-box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -372,9 +308,58 @@ a {
 .main-container .contact-container {
   height: 60vh;
   width: 100%;
+  padding: 4rem;
+  color: white;
   -webkit-box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .contact-container h1 {
+  margin: 1rem;
+}
+
+.main-container .contact-container h3 {
+  margin: 2rem;
+}
+
+.main-container .contact-container div {
+  margin: 2rem;
+  border: 2px solid white;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .contact-container div div {
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .main-container footer {
@@ -441,5 +426,210 @@ a {
   bottom: 0;
   right: 0;
   z-index: 5;
+}
+
+.home-container img {
+  margin: 2rem;
+}
+
+.home-container p {
+  margin: 0 3rem;
+  padding: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-container p {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.about-container h4 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.about-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container section img {
+  padding: 5rem;
+  height: auto;
+  width: 60%;
+}
+
+.about-container section div {
+  width: 40%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container section div p {
+  padding: 0;
+}
+
+.about-container section:nth-of-type(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shelfmeals-container {
+  padding: 4rem;
+}
+
+.shelfmeals-container h1 {
+  margin: 1rem;
+  color: #6a040f;
+}
+
+.shelfmeals-container p {
+  max-width: 1000px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.shelfmeals-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.shelfmeals-container section div {
+  margin: 2rem 4rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shelfmeals-container section div h2 {
+  margin: 0 2rem;
+}
+
+.shelfmeals-container section div ul {
+  list-style: none;
+}
+
+.shelfmeals-container section div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shelfmeals-container section div ul li h3 {
+  color: #6a040f;
+}
+
+.shelfmeals-container section div ul li p {
+  font-size: 1.8rem;
+}
+
+.boxmeals-container {
+  padding: 4rem;
+}
+
+.boxmeals-container h1 {
+  margin: 1rem;
+  color: #6a040f;
+}
+
+.boxmeals-container p {
+  max-width: 1000px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.boxmeals-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxmeals-container section img {
+  width: 50%;
+  padding: 2rem;
+}
+
+.boxmeals-container section div {
+  width: 50%;
+  padding: 2rem;
+}
+
+.boxmeals-container section div h2 {
+  margin-top: 2rem;
+  color: #6a040f;
+}
+
+.boxmeals-container section div h4 {
+  font-size: 2rem;
+}
+
+.boxmeals-container section div p {
+  max-width: 500px;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  text-align: start;
+}
+
+.boxmeals-container img {
+  margin: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
